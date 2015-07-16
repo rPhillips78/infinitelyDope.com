@@ -27,8 +27,16 @@ a {
 }
 
 /*******************
-Page Layout
+Welcome Page Layout
 *******************/
+
+body {
+	overflow-y: scroll;
+	float: left;
+	width: 100%;
+	height: auto;
+}
+
 
 header {
 	float: left;
@@ -39,6 +47,15 @@ header {
 	background-color: #000;
 	color: #6f6f6f;	
 	z-index: 100;
+}
+
+header a {
+	color: #6f6f6f;
+}
+header a:hover {
+	color: #99EBD6;
+	transform: scale(1.005);
+	transition: all .3s ease-out;
 }
 
 header h3 {
@@ -90,10 +107,6 @@ header h4 {
 	width: 25%;
 }
 
-#menu ul li a:hover {
-	color: #2f2f2f;
-}
-
 #menu ul li a {
 	float: left;
 	width: 165px;
@@ -101,35 +114,19 @@ header h4 {
 	color: #fff;
 }
 
-#drop-down {
-	display: inline-block;
-	width: 800px;
-	margin-left: 228px;
+#menu li,#menu a:hover {
+	transform: scale(1.25);
+	transition: all .3s ease-out;
+	color: #99EBD6;
 }
 
-#drop-down .nav-panel {
-	float: left;
-	width: 25%;
-	padding-left: 2%;
-}
 
-#drop-down .nav-panel ul {
-	display: block;
-}	
-
-#drop-down .nav-panel ul a {
-	text-decoration: none;	
-}
-
-#menu li a:hover #drop-down {
-	display: block;
-}
 
 footer {
 	clear:both;
 	margin: 0;
 	width: 100%;
-	position: absolute;
+	position: fixed;
 	bottom: 0;
 	background-color: #000;
 	color: #fff;
@@ -139,6 +136,84 @@ footer p {
 	margin: 0;
 	text-align: center;
 }
+
+/*****************
+ Layout for other pages
+*****************/
+
+#page-bg {
+	background-image: url(../images/positive_image.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+}
+
+
+.people {
+	background-color: transparent;
+	position: relative;
+	top: 115px;
+	left: 186.5px;
+	width: 905px;
+	height: 396px;
+	border-radius: 3px;
+	margin-bottom: 150px;
+	box-shadow: inset 10px 10px #000;
+}
+
+article {
+	background-image: url(../images/building.jpg);
+	position: absolute;
+	background-size: cover;
+	background-position: center;
+	height: 396px;
+	width: 100%;
+	border-radius: 10px;
+
+}
+
+
+article img {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	width: 550px;
+	height: 360px;
+	border-radius: 10px;
+}
+
+div h1 {
+	font-family: 'Rosario', sans-serif;
+	position: absolute;
+	top: 10px;
+	right: 18px;
+	z-index: 700;
+	background-color: #333;
+	color: #dfdfdf;
+	border-radius: 3px;
+}
+
+article p {
+	position: absolute;
+	right: 9px;
+	top: 45px;
+	width: 290px;
+	height: 360px;
+	overflow-y: auto;
+	display: inline-block;
+	background-color: rgba(255,250,255,.8);
+	border-radius: 4px;
+	box-shadow: 0 0 5px rgba(0,0,0,.75);
+	padding: 2%;
+}
+
+article p:first-letter {
+	font-family: 'Tangerine', sans-serif;
+	font-size: 1.65em;
+}
+
+
 
 
 /******************
