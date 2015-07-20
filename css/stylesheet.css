@@ -141,77 +141,97 @@ footer p {
  Layout for other pages
 *****************/
 
-#page-bg {
-	background-image: url(../images/positive_image.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-
-}
-
-
-.people {
-	background-color: transparent;
-	position: relative;
-	top: 115px;
-	left: 186.5px;
-	width: 905px;
-	height: 396px;
-	border-radius: 3px;
-	margin-bottom: 150px;
-	box-shadow: inset 10px 10px #000;
-}
-
-article {
+.featured {
 	background-image: url(../images/building.jpg);
-	position: absolute;
 	background-size: cover;
 	background-position: center;
-	height: 396px;
-	width: 100%;
-	border-radius: 10px;
-
+	position: relative;
+	width: 940px;
+	height: 480px;
+	top: 100px;
+	left: 162.5px;
+	border-top: 3px solid #000;
+	border-bottom: 3px solid #000;
+	margin-bottom: 100px;
 }
 
-
-article img {
+#story-text {
 	position: absolute;
-	top: 20px;
+	bottom: 20px;
 	left: 20px;
-	width: 550px;
-	height: 360px;
-	border-radius: 10px;
+	width: 50%;
+	margin: 0;
+	padding: 2% 5% ;
+	border: 1px solid #000;
+	font-family: 'Marcellus',sans-serif;
+	color: #000;
+	background-color: rgba(208, 209, 208 ,.85);
+	box-shadow: inset 3px 3px #000;	
 }
 
-div h1 {
-	font-family: 'Rosario', sans-serif;
-	position: absolute;
-	top: 10px;
-	right: 18px;
-	z-index: 700;
-	background-color: #333;
-	color: #dfdfdf;
-	border-radius: 3px;
+#story-text button {
+	background-color: #99EBD6;
+	border-radius: 25px;
 }
 
-article p {
-	position: absolute;
-	right: 9px;
-	top: 45px;
-	width: 290px;
-	height: 360px;
-	overflow-y: auto;
+
+
+
+	
+.carousel-container {
+	width: 100%;
+	height: 225px;
+	border-top: 3px solid #000;
+	border-bottom: 3px solid #000;
+	margin-top: 275px;
+	overflow: hidden;
+	position: relative;
+}
+
+.carousel-images {
 	display: inline-block;
-	background-color: rgba(255,250,255,.8);
-	border-radius: 4px;
-	box-shadow: 0 0 5px rgba(0,0,0,.75);
+	position: absolute;
+	width: 100%;
+	height: 190px;
+	padding: 0 -5px;
+	margin: 0;
+	bottom: 15px;
+}
+
+.carousel-images li { 
+	float:left;
+	width: 22%;
+	margin: 1%;
+	padding: 1%;
+	height: 175px;
+}
+
+  .carousel-images li img{
+	float: left;
+	width: 20%;
+	height: 127px;
+	position: absolute;
+	padding: 0 14px 0 2px;
+
+}
+
+.carousel-images p {
+	position: relative;
+	bottom: -112px;
+	margin: 0;
+	text-align: center;
+}
+
+blockquote {
+	font-family: 'Rosario',sans-serif;
+	font-size: 2em;
+	font-style: italic;
+	font-weight: bold;
 	padding: 2%;
 }
 
-article p:first-letter {
-	font-family: 'Tangerine', sans-serif;
-	font-size: 1.65em;
-}
+
+
 
 
 
